@@ -1,0 +1,24 @@
+//VARIABLES
+$gradiant: liner-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+$error:hsl(0, 100%, 66%);
+$ltGray: hsl(270, 3%, 87%);
+$dkGray: hsl(279, 6%, 55%);
+$violet: hsl(278, 68%, 11%);
+
+
+//SETUP
+*,*::after,*::before{
+  box-sizing: border-box;
+  margin:0;
+}
+
+body, html{
+  height: 100vh;
+  width: 100%;
+}
+
+body{
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+
