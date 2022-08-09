@@ -41,4 +41,10 @@ input {
 .date-cvc-container div {
   width: 50%;
 }
+
+@media screen and (min-width: 1000px) {
+  form {
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=Form.css.map */

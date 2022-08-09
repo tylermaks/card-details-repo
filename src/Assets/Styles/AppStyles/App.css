@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-body, html {
+body, html, .App {
   height: 100vh;
   width: 100%;
 }
@@ -15,6 +15,8 @@ body {
 
 section {
   padding: 1.5rem;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 button {
@@ -50,9 +52,55 @@ p {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  background-image: url("../../images/bg-main-mobile.png");
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-image: url("../../images/bg-main-mobile.png");
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-image: url("../../images/bg-main-desktop.png");
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+  }
+  section {
+    height: 100%;
+  }
+  .App {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .card-container {
+    height: 100%;
+    max-width: 600px;
+    width: 30%;
+    margin: 0;
+  }
+  .form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 15% 0 auto;
+    max-width: 500px;
+    width: 70%;
+  }
 }
 /*# sourceMappingURL=App.css.map */

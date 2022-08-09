@@ -1,7 +1,6 @@
 .credit-card {
   background-size: contain;
   background-repeat: no-repeat;
-  position: relative;
   color: #fff;
   height: 155px;
   width: 280px;
@@ -35,8 +34,8 @@
 
 .security-num--back {
   position: absolute;
-  right: 25px;
-  top: 63px;
+  right: 12%;
+  top: 44%;
 }
 
 .card-details {
@@ -75,5 +74,21 @@
 
 .logo--back, .card-details--back, .security-num--front {
   display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .credit-card {
+    position: absolute;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .credit-card--front {
+    top: 25%;
+    right: -5%;
+  }
+  .credit-card--back {
+    bottom: 25%;
+    right: -30%;
+  }
 }
 /*# sourceMappingURL=CreditCard.css.map */

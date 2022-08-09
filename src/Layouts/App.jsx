@@ -11,7 +11,7 @@ function App() {
   return (
     <main className="App">
       <section className="card-container">
-         <CreditCard class="back"/>
+          <CreditCard class="back"/>
           <CreditCard class="front"/>
       </section>
       <section className="form-container">

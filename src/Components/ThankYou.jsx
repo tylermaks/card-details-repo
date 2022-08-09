@@ -12,7 +12,7 @@ function ThankYou(){
                 <h1>THANK YOU!</h1>
                 <p>We've add your card details</p>
             </article>
-            <button>Continue</button>
+            <button className="cont-btn">Continue</button>
         </div>
     )
 }
