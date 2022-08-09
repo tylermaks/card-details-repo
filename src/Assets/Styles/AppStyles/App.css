@@ -12,4 +12,47 @@ body, html {
 body {
   font-family: 'Space Grotesk', sans-serif;
 }
+
+section {
+  padding: 1.5rem;
+}
+
+button {
+  background-color: #21092f;
+  border: none;
+  border-radius: 15px;
+  color: #dedddf;
+  cursor: pointer;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  margin-top: 2rem;
+  padding: 1em;
+  width: 100%;
+}
+
+h1 {
+  color: #21092f;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+p {
+  color: #8e8593;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-image: url("../../images/bg-main-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
 /*# sourceMappingURL=App.css.map */

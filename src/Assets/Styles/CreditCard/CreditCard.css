@@ -1,0 +1,79 @@
+.credit-card {
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff;
+  height: 155px;
+  width: 280px;
+}
+
+.credit-card--back {
+  background-image: url("../../images/bg-card-back.png");
+  margin-left: auto;
+}
+
+.credit-card--front {
+  background-image: url("../../images/bg-card-front.png");
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: -35%;
+}
+
+.logo--front {
+  width: 50px;
+}
+
+.security-num--back {
+  position: absolute;
+  right: 25px;
+  top: 63px;
+}
+
+.card-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-details--front {
+  height: 50%;
+}
+
+.credit-digit {
+  font-size: 18px;
+  margin-right: 0.5em;
+  letter-spacing: 2px;
+}
+
+.name-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  letter-spacing: 1.2px;
+  font-size: 11px;
+}
+
+.logo--back, .card-details--back, .security-num--front {
+  display: none;
+}
+/*# sourceMappingURL=CreditCard.css.map */
