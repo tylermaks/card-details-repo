@@ -1,6 +1,7 @@
 //VARIABLES
 $violet: hsl(278, 68%, 11%);
 $dkGray: hsl(279, 6%, 55%);
+$error:hsl(0, 100%, 66%);
 
 form{
     margin-top: 12.5vh;
@@ -20,7 +21,16 @@ input{
     border-radius: 10px;
     font-family: "Space Grotesk", sans-serif;
     font-size: 18px;
+    margin-bottom: 5px;
     padding:0.5em 1em;
+}
+
+input:invalid[focused="true"] ~ .error{
+    display:block;
+}
+
+input:invalid[focused="true"]{ 
+    border: 1px solid $error;
 }
 
 input::-webkit-outer-spin-button,
@@ -48,6 +58,11 @@ input::-webkit-inner-spin-button {
     div{
         width: 50%;
     }
+}
+
+.error{
+    color:$error;
+    display:none;
 }
 
 @media screen and (min-width: 1440px) {

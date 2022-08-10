@@ -16,7 +16,16 @@ input {
   border-radius: 10px;
   font-family: "Space Grotesk", sans-serif;
   font-size: 18px;
+  margin-bottom: 5px;
   padding: 0.5em 1em;
+}
+
+input:invalid[focused="true"] ~ .error {
+  display: block;
+}
+
+input:invalid[focused="true"] {
+  border: 1px solid #ff5252;
 }
 
 input::-webkit-outer-spin-button,
@@ -46,6 +55,11 @@ input::-webkit-inner-spin-button {
 
 .date-cvc-container div {
   width: 50%;
+}
+
+.error {
+  color: #ff5252;
+  display: none;
 }
 
 @media screen and (min-width: 1440px) {
