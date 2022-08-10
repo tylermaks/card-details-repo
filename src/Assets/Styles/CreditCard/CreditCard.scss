@@ -68,19 +68,19 @@
 //++++++++++++++++++++++++++++
 //++++++++DESKTOP VIEW++++++++
 //++++++++++++++++++++++++++++
-@media screen and (min-width:1000px){
+@media screen and (min-width:1440px){
     .credit-card{
         position:absolute;
         transform: scale(1.5);
 
         &--front{
-          top: 25%;  
+          top:25%;  
           right:-5%;
         }
 
         &--back{
             bottom: 25%;
-            right: -30%;
+            right: -25%;
         }
     }
 }

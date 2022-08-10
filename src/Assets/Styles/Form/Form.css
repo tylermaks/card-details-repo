@@ -19,6 +19,12 @@ input {
   padding: 0.5em 1em;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .lrg {
   width: 100%;
 }
@@ -42,7 +48,7 @@ input {
   width: 50%;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1440px) {
   form {
     margin: 0;
   }

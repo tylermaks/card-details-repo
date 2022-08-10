@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 
 import CreditCard from "../Components/CreditCard"
 import Form from "../Components/Form"
@@ -8,6 +8,18 @@ import "../Assets/Styles/AppStyles/App.css"
 
 
 function App() {
+  
+  const [submit, setSubmit] = useState(false)
+
+  const handleSubmit = () => {
+      setSubmit(true)
+  }
+
+
+  const handleChange = (e) =>{ 
+    console.log(e.target)
+  }
+
   return (
     <main className="App">
       <section className="card-container">
@@ -15,8 +27,7 @@ function App() {
           <CreditCard class="front"/>
       </section>
       <section className="form-container">
-        {/* <Form /> */}
-        <ThankYou />
+        { submit ? <ThankYou /> : <Form change={handleChange} submit={handleSubmit}/>}
       </section>
     </main>
   );

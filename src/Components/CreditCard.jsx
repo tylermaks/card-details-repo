@@ -10,10 +10,11 @@ function CreditCard (props){
             <span className={"name-date security-num--" + props.class}>000</span>
             <div className={"card-details card-details--" + props.class}> 
                 <div>  
+                    {/* <span className="credit-digit">0000</span>
                     <span className="credit-digit">0000</span>
                     <span className="credit-digit">0000</span>
-                    <span className="credit-digit">0000</span>
-                    <span className="credit-digit">0000</span>
+                    <span className="credit-digit">0000</span> */}
+                    {props.creditNum}
                 </div>
         
                 <div className="name-date">
